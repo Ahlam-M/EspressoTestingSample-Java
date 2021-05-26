@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edt_num1"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="+"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="40sp"/>
+
+    <EditText
+        android:id="@+id/edt_num2"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btn_equals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="="
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:background="#A6AAAAAA"/>
+
+</LinearLayout>
