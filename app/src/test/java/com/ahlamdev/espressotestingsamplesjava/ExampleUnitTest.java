@@ -1,4 +1,4 @@
-package com.ahlamdev.unittestingjava;
+package com.ahlamdev.espressotestingsamplesjava;
 
 import org.junit.Test;
 
