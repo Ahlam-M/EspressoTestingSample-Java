@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
             } catch (NumberFormatException e){
 
+                //error messages
                 txtResult.setText("Error!");
                 Toast.makeText(this, "Numeric value is required in both fields!", Toast.LENGTH_LONG).show();
                 Log.e("Error", "Numeric value is required in both fields!");
