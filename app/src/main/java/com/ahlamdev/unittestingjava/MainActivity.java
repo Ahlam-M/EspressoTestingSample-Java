@@ -3,10 +3,13 @@ package com.ahlamdev.unittestingjava;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +25,17 @@ public class MainActivity extends AppCompatActivity {
 
 
         btnEquals.setOnClickListener(v -> {
-            txtResult.setText(MathsUtils.add(edtN1.getText(), edtN2.getText()));
+txtResult.clearComposingText();
+            try{
+                txtResult.setText(MathsUtils.add(edtN1.getText(), edtN2.getText()));
+
+            } catch (NumberFormatException e){
+
+                txtResult.setText("Error!");
+                Toast.makeText(this, "Numeric value is required in both fields!", Toast.LENGTH_LONG).show();
+                Log.e("Error", "Numeric value is required in both fields!");
+            }
+
         });
     }
 }
