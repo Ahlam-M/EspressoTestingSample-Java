@@ -23,7 +23,7 @@ public class AppInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.ahlamdev.unittestingjava", appContext.getPackageName());
+        assertEquals("com.ahlamdev.espressotestingsamplesjava", appContext.getPackageName());
     }
 
     @Rule
